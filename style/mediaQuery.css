@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px){
+    main section{
+        height: 500px;
+        width: 80vw;
+    }
+    #form{
+        float: right;
+        width: 70%;
+    }
+    #img{
+        float: left;
+        height: 500px;
+        width: 30%;
+    }#form .dados input{
+        width: 85%;
+    }
+}
+@media screen and (min-width: 1366px){
+    main section{
+        height: 500px;
+        width: 70vw;
+    }
+    #form{
+        float: left;
+        width: 50%;
+    }
+    #img{
+        float: right;
+        height: 500px;
+        width: 50%;
+    }
+}

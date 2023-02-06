@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mediaQuery.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div id="img">
+            </div>
+            <div id="form">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <p class="dados">
+                        <label for="usu"><img src="img/iconPerson.png" alt="icone de usuario" class="icon"></label>
+                        <input type="text" name="usu" id="usu" placeholder="Seu Email" autocomplete="email" required>
+                    </p>
+                    <p class="dados">
+                        <label for="senha"><img src="img/iconKey.png" alt="icone de chave" class="icon"></label>
+                        <input type="password" name="senha" id="senha" minlength="8" placeholder="Sua senha" autocomplete="current-password" required>
+                    </p>
+                    <p class="botoes" >
+                        <input type="submit" value="Entrar" id="btn">
+                        <a href="#">Esqueceu a senha?</a>
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

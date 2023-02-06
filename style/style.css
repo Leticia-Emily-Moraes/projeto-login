@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+:root{
+    --corFundo: #823DFF;
+    --corInput: #3B8EF5;
+    --corBotão: #3D61FF;
+    --corHover: #5143E8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html, body{
+    background-color:  var(--corFundo);
+    height: 100%;
+    width: 100%;
+}
+main section{
+    height: 500px;
+    width: 250px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #4c2595;
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+#img{
+    display: block;
+    background-image: url(../img/Predio.jpg);
+    background-repeat: no-repeat;
+    height: 200px;
+    background-size: cover;
+}
+#form{
+    display: block;
+    padding: 10px;
+}
+#form h1{
+    margin-bottom: 10px;
+    text-align: center;
+}
+#form .dados{
+    background-color: var(--corInput);
+    padding:2px;
+    border: 3px solid #3078cf;
+    border-radius: 5px;
+    margin: 5px 2px;
+}
+#form .dados input{
+    background-color: var(--corBotão);
+    color: #FFFFFF;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #54378a;
+    transform: translateY(-10px);
+    padding: 2px;
+    width: 75%;
+}
+#form .dados input::placeholder{
+    color: #FFFFFF;
+}
+#form .dados input:focus-within{
+    background-color: #FFFFFF;
+    border-color: var(--corHover);
+    color: #000000;
+}
+#form .icon{
+    width: 40px;
+}
+#form #btn{
+    width: 100%;
+    background-color: var(--corBotão);
+    color: #FFFFFF;
+    border: 1px solid #1f6dcc;
+    border-radius: 5px;
+    height: 25px;
+}
+#form #btn:hover{
+    background-color: var(--corHover);
+    cursor: pointer;
+}
+#form .botoes{
+    text-align: center;
+    margin: 5px;
+}
+#form .botoes a{
+    color: #000000;
+    text-decoration: none;
+    margin: 5px;
+}
+#form .botoes a:hover{
+    color: var(--corHover);
+    text-decoration: underline;
+}
